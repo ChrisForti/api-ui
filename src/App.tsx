@@ -1,12 +1,19 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
+import SnippetForm from "./components/SnippetForm";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  // need to figure out usestate params, for snippet box
+  const [setHeaderNavigation, setToHome] = useState(0);
 
   return (
     <div className="text-black">
-      <Header />
+      <Header setHeaderNavigation={setToHome} />
+      <div>
+        <SnippetForm home={setToHome} />
+        <Sidebar />
+      </div>
     </div>
   );
 }
