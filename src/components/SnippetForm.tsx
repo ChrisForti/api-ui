@@ -3,7 +3,6 @@ import React, { useState } from "react";
 interface Snippet {
   snippetId: string;
   code: string;
-  home: boolean;
 }
 
 const SnippetForm: React.FC = () => {
