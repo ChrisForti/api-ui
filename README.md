@@ -9,4 +9,4 @@ Built within the React framework, using typescript for type safety
 
 ### Since early deployment is impotant
 
-(view site)[https://chrisforti.github.io/api-ui/]
+[view site](https://chrisforti.github.io/api-ui/)
