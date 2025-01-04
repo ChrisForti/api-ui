@@ -1,13 +1,13 @@
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
-import SnippetForm from "./components/SnippetForm";
+// import SnippetForm from "./components/SnippetForm";
 
 function App() {
   return (
     <div className="text-black">
       <Header />
       <div>
-        <SnippetForm />
+        {/* <SnippetForm /> */}
         <Sidebar />
       </div>
     </div>
