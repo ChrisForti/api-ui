@@ -11,11 +11,9 @@ export function SnippetForm() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Handle snippet submission (e.g., send to API)
-    // client side validations
     // what does the api need from me
+    // client side validations
     const snippet = { title, code }; // use the state
-
     console.log("Snippet submitted:", snippet);
   };
 
