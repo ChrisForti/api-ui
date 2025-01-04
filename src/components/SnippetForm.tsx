@@ -1,36 +1,36 @@
 import React, { useState } from "react";
 
-interface Snippet {
-  snippetId: string;
+type Snippet = {
+  title: string;
   code: string;
-}
+};
 
-const SnippetForm: React.FC = () => {
-  const [snippet, setSnippet] = useState<Snippet>({ snippetId: "", code: "" });
-
-  const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = event.target;
-    setSnippet((prevSnippet) => ({ ...prevSnippet, [name]: value }));
-  };
+export function SnippetForm() {
+  const [title, setTitle] = useState(""); // create the state
+  const [code, setCode] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Handle snippet submission (e.g., send to API)
+    // client side validations
+    // what does the api need from me
+    const snippet = { title, code }; // use the state
+
     console.log("Snippet submitted:", snippet);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="title">Snippet Id:</label>
+        <label htmlFor="title">Title:</label>
         <input
           type="text"
           id="title"
           name="title"
-          value={snippet.snippetId}
-          onChange={handleChange}
+          value={title}
+          onChange={(event) => {
+            setTitle(event.target.value);
+          }}
         />
       </div>
       <div>
@@ -38,13 +38,13 @@ const SnippetForm: React.FC = () => {
         <textarea
           id="code"
           name="code"
-          value={snippet.code}
-          onChange={handleChange}
+          value={code}
+          onChange={(event) => {
+            setCode(event.target.value);
+          }}
         />
       </div>
       <button type="submit">Submit</button>
     </form>
   );
-};
-
-export default SnippetForm;
+}
