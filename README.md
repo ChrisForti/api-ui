@@ -7,6 +7,6 @@ Built within the React framework, using typescript for type safety
 `npm run dev` **for production**
 `npm run b uild` **To build an artifact for deployment**
 
-### Since early deployment is impotant
+### Since early deployment is important
 
 [view site](https://chrisforti.github.io/api-ui/)
