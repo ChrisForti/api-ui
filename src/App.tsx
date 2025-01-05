@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
+// import { Sidebar } from "./components/Sidebar";
 import { SnippetForm } from "./components/SnippetForm";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Header />
       <div>
         <SnippetForm />
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
     </div>
   );

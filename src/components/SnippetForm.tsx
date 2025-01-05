@@ -18,8 +18,8 @@ export function SnippetForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form className="ml-4 pt-4" onSubmit={handleSubmit}>
+      <div className="">
         <label htmlFor="title">Title:</label>
         <input
           type="text"
@@ -42,7 +42,14 @@ export function SnippetForm() {
           }}
         />
       </div>
-      <button type="submit">Submit</button>
+      <div className="pt-5">
+        <button
+          type="submit"
+          className="mt-4 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-slate-400 focus:outline-none"
+        >
+          Submit
+        </button>
+      </div>
     </form>
   );
 }
