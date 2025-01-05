@@ -22,7 +22,7 @@ export function SnippetForm() {
       <div className="mb-4">
         <label
           htmlFor="title"
-          className="block text-sm font-medium text-gray-700"
+          className="text-md block font-medium text-blue-900"
         >
           Title:
         </label>
@@ -40,7 +40,7 @@ export function SnippetForm() {
       <div>
         <label
           htmlFor="code"
-          className="block text-sm font-medium text-gray-700"
+          className="text-md block font-medium text-blue-900"
         >
           Code:
         </label>
@@ -57,7 +57,7 @@ export function SnippetForm() {
       <div className="pt-5">
         <button
           type="submit"
-          className="mt-4 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-slate-400 focus:outline-none"
+          className="mt-4 rounded bg-blue-900 px-4 py-2 font-bold text-white hover:bg-red-500 focus:outline-none"
         >
           Submit
         </button>
