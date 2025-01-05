@@ -19,8 +19,13 @@ export function SnippetForm() {
 
   return (
     <form className="ml-4 pt-4" onSubmit={handleSubmit}>
-      <div className="">
-        <label htmlFor="title">Title:</label>
+      <div className="mb-4">
+        <label
+          htmlFor="title"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Title:
+        </label>
         <input
           type="text"
           id="title"
@@ -29,10 +34,16 @@ export function SnippetForm() {
           onChange={(event) => {
             setTitle(event.target.value);
           }}
+          className="mt-3 w-full rounded-md border px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
         />
       </div>
       <div>
-        <label htmlFor="code">Code:</label>
+        <label
+          htmlFor="code"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Code:
+        </label>
         <textarea
           id="code"
           name="code"
@@ -40,6 +51,7 @@ export function SnippetForm() {
           onChange={(event) => {
             setCode(event.target.value);
           }}
+          className="mt-3 w-full rounded-md border px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-lg"
         />
       </div>
       <div className="pt-5">
