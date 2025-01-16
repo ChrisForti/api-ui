@@ -20,10 +20,7 @@ export function SnippetForm() {
   return (
     <form className="ml-4 pt-4" onSubmit={handleSubmit}>
       <div className="mb-4">
-        <label
-          htmlFor="title"
-          className="text-md block font-medium text-blue-900"
-        >
+        <label className="text-md block font-medium text-blue-900">
           Title:
         </label>
         <input
@@ -38,12 +35,7 @@ export function SnippetForm() {
         />
       </div>
       <div>
-        <label
-          htmlFor="code"
-          className="text-md block font-medium text-blue-900"
-        >
-          Code:
-        </label>
+        <label className="text-md block font-medium text-blue-900">Code:</label>
         <textarea
           id="code"
           name="code"
