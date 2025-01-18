@@ -1,12 +1,12 @@
-# This us a UI that I intend to use for my snippet-box API
+# Snippet-Box API UI
 
-Built within the React framework, using typescript for type safety
+This is a user interface built with React and TypeScript for interacting with the Snippet-Box API.
 
-## usage
+## Usage
 
-`npm run dev` **for production**
-`npm run b uild` **To build an artifact for deployment**
+- Run `npm run dev` for production environment
+- Run `npm run build` to build an artifact for deployment
 
-### Since early deployment is important
+### Early Deployment
 
-[view site](https://chrisforti.github.io/api-ui/)
+For early deployment access the site [here](https://chrisforti.github.io/api-ui/)
