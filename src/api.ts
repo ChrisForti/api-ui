@@ -23,6 +23,9 @@ export async function login(email: string, password: string) {
     password,
   };
   // need some validation for username and password
+  if (!email || !password) {
+    throw new Error("Email and password are required");
+  }
 
   const response = await fetch(endpoint, {
     method: "POST",
