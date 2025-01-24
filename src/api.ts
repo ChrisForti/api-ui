@@ -22,13 +22,24 @@ export async function login(email: string, password: string) {
     email,
     password,
   };
-  // need some validation for username and password
+
+  // Validation for username and password
   if (!email || !password) {
-    throw new Error("Email and password are required");
+    return null;
   }
 
   const response = await fetch(endpoint, {
     method: "POST",
+    headers: {
+      "content-Type": "application/json",
+    },
     body: JSON.stringify(loginData),
   });
+
+  if (!response.ok) {
+    // Handle HTTP errors
+    const errorData = await response.json();
+    throw new Error(errorData || "Login failed");
+    return null;
+  }
 }
