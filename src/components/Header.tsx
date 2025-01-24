@@ -5,7 +5,7 @@ export function Header() {
     <div className="bg-slate-200 p-6">
       <header className="text-center text-7xl text-blue-900">
         Express Snippet Box
-        <Link to="/login" className="ml-4 text-blue-500 underline">
+        <Link to="/login" className="text-sm text-blue-500 underline">
           Login
         </Link>
       </header>

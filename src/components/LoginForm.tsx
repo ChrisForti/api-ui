@@ -29,7 +29,7 @@ export function LoginForm() {
           onChange={(event) => setEmail(event.target.value)}
         />
         <label className="text-md block font-medium text-blue-900">
-          Email:
+          Password:
         </label>
         <input
           type="password"
