@@ -6,7 +6,6 @@ import { LoginForm } from "./components/LoginForm";
 function App() {
   return (
     <Router>
-      {" "}
       <div className="text-black">
         <Header />
         <div>
