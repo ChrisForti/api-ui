@@ -27,6 +27,7 @@ export function LoginForm() {
           name="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
+          className="mt-3 w-full rounded-md border px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
         />
         <label className="text-md block font-medium text-blue-900">
           Password:
@@ -37,6 +38,7 @@ export function LoginForm() {
           name="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
+          className="mt-3 w-full rounded-md border px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
         />
         <button
           type="submit"
